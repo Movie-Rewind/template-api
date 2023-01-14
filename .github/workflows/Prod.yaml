@@ -17,11 +17,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Move to src folder
-      run: cd src
     - name: install dependencies
-      run: npm ci
+      run: cd src && pwd && npm ci
     - name: run lint
-      run: npm run lint
+      run: cd src && npm run lint
     - name: run tests
-      run: npm run test
+      run: cd src && npm run test
