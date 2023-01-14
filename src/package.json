@@ -9,7 +9,8 @@
     "dev": "NODE_ENV=run nodemon -L --inspect=0.0.0.0 index.js",
     "test": "jest --testPathPattern=/src/test/unit --maxWorkers=1 --forceExit --passWithNoTests",
     "start": "NODE_ENV=run node index.js",
-    "eslint-fix": "eslint --fix -c .eslintrc.json ."
+    "eslint-fix": "eslint --fix -c .eslintrc.json .",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
